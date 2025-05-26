@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92C33BB2-4351-45F8-A40C-47373BDBFBFE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hastane_Otomasyonu</RootNamespace>
+    <AssemblyName>Hastane Otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ModernUI.2.0.0\lib\net20\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aktifvegecmisrandevular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aktifvegecmisrandevular.Designer.cs">
+      <DependentUpon>aktifvegecmisrandevular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaglantıCalıstır.cs" />
+    <Compile Include="bolumegorerandevular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bolumegorerandevular.Designer.cs">
+      <DependentUpon>bolumegorerandevular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bölümlerimiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bölümlerimiz.Designer.cs">
+      <DependentUpon>Bölümlerimiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doktor.cs" />
+    <Compile Include="doktoragorerandevular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktoragorerandevular.Designer.cs">
+      <DependentUpon>doktoragorerandevular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktorFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorFRM.Designer.cs">
+      <DependentUpon>doktorFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktorFRM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorFRM2.Designer.cs">
+      <DependentUpon>doktorFRM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ana sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ana sayfa.Designer.cs">
+      <DependentUpon>Ana sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GorusVeSikayetleriniz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GorusVeSikayetleriniz.Designer.cs">
+      <DependentUpon>GorusVeSikayetleriniz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_T_SFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_T_SFRM.Designer.cs">
+      <DependentUpon>G_T_SFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hasta_Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasta_Kayıt.Designer.cs">
+      <DependentUpon>Hasta_Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iletisimbilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iletisimbilgileri.Designer.cs">
+      <DependentUpon>iletisimbilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KisiselBilgiler.cs" />
+    <Compile Include="Misyon ve Vizyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misyon ve Vizyon.Designer.cs">
+      <DependentUpon>Misyon ve Vizyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineRandevu.Designer.cs">
+      <DependentUpon>OnlineRandevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Randevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Randevu.Designer.cs">
+      <DependentUpon>Randevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RandevuBilgiler.cs" />
+    <Compile Include="Sekreter.cs" />
+    <Compile Include="sekreterFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterFRM.Designer.cs">
+      <DependentUpon>sekreterFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekreterFRM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterFRM2.Designer.cs">
+      <DependentUpon>sekreterFRM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarihce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarihce.Designer.cs">
+      <DependentUpon>Tarihce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tumdoktorlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tumdoktorlar.Designer.cs">
+      <DependentUpon>tumdoktorlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tumrandevular_kayıtlıhastalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tumrandevular_kayıtlıhastalar.Designer.cs">
+      <DependentUpon>tumrandevular_kayıtlıhastalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veritabani.cs" />
+    <Compile Include="Yetkili.cs" />
+    <Compile Include="YetkiliGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YetkiliGiris.Designer.cs">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aktifvegecmisrandevular.resx">
+      <DependentUpon>aktifvegecmisrandevular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bolumegorerandevular.resx">
+      <DependentUpon>bolumegorerandevular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bölümlerimiz.resx">
+      <DependentUpon>Bölümlerimiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktoragorerandevular.resx">
+      <DependentUpon>doktoragorerandevular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorFRM.resx">
+      <DependentUpon>doktorFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorFRM2.resx">
+      <DependentUpon>doktorFRM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ana sayfa.resx">
+      <DependentUpon>Ana sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ana sayfa.tr-TR.resx">
+      <DependentUpon>Ana sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GorusVeSikayetleriniz.resx">
+      <DependentUpon>GorusVeSikayetleriniz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_T_SFRM.resx">
+      <DependentUpon>G_T_SFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasta_Kayıt.resx">
+      <DependentUpon>Hasta_Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iletisimbilgileri.resx">
+      <DependentUpon>iletisimbilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misyon ve Vizyon.resx">
+      <DependentUpon>Misyon ve Vizyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineRandevu.resx">
+      <DependentUpon>OnlineRandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Randevu.resx">
+      <DependentUpon>Randevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterFRM.resx">
+      <DependentUpon>sekreterFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterFRM2.resx">
+      <DependentUpon>sekreterFRM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarihce.resx">
+      <DependentUpon>Tarihce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tumdoktorlar.resx">
+      <DependentUpon>tumdoktorlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tumrandevular_kayıtlıhastalar.resx">
+      <DependentUpon>tumrandevular_kayıtlıhastalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliGiris.resx">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
