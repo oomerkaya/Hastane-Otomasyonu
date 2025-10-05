@@ -19,7 +19,7 @@ Kullanılan Teknolojiler ve Araçlar:
 
     Programlama Dili: C#
 
-    Veri Yönetimi: Dosya tabanlı kayıt sistemi
+    Veri Yönetimi: Dosya tabanlı kayıt sistemi ve MSSQL
 
     Yazılım Mimarisi: Nesne Yönelimli Programlama (OOP) prensipleriyle modüler tasarım
 
