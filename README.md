@@ -1,7 +1,7 @@
 # PROJE AMACI
 Klinik ve hastane yönetimi için hasta kayıt, randevu takibi, doktor ve personel yönetimi gibi temel operasyonların tek bir platform üzerinden kolayca yönetilmesini sağlamak.
 
-Temel Özellikler:
+# Temel Özellikler:
 
     Hasta kayıt, düzenleme ve takibi
 
@@ -15,7 +15,7 @@ Temel Özellikler:
 
     Hata kontrolü ve veri doğrulama mekanizmaları
 
-Kullanılan Teknolojiler ve Araçlar:
+# Kullanılan Teknolojiler ve Araçlar:
 
     Programlama Dili: C#
 
