@@ -1,4 +1,4 @@
-#PROJE AMACI
+# PROJE AMACI
 Klinik ve hastane yönetimi için hasta kayıt, randevu takibi, doktor ve personel yönetimi gibi temel operasyonların tek bir platform üzerinden kolayca yönetilmesini sağlamak.
 
 Temel Özellikler:
